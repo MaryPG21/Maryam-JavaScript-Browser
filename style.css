@@ -1,0 +1,14 @@
+.btn
+{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+button
+{
+    color: red;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 50%;
+}
