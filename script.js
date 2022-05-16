@@ -9,8 +9,7 @@ function colorHex( )
 // take the generated random number to the base 16
 
     let num2= num1.toString(16);
-    let sh='#'
 
-   num3= document.getElementById("HC").style.backgroundColor =sh+num2
+   num3= document.getElementById("HC").style.backgroundColor =`#${num2}`
     console.log(num3)
 }
