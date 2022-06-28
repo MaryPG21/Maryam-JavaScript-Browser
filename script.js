@@ -13,3 +13,28 @@ function colorHex( )
    num3= document.getElementById("HC").style.backgroundColor =`#${num2}`
     console.log(num3)
 }
+
+// --------filter ----------------
+
+function filterSelection(event) {
+  const cards = document.querySelectorAll(".card"); 
+  let key = event.target.dataset.filter; 
+  filterElement(cards,key)
+};
+
+function filterElement(cards,key){
+  cards.forEach(card => {
+    if(card.classList.contains(key)){
+      card.style.display= "block"
+    }
+    else{
+    card.style.display= "none"
+    }
+  });
+} 
+
+function filterSearch(){
+  const searchName= document.getElementById("search").value.toLowerCase()
+  const cards = document.querySelectorAll(".card");
+  filterElement(cards,searchName)
+}
