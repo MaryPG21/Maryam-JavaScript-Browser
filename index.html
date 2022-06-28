@@ -4,11 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Hex Color</title>
+    <title>Js-Browser</title>
 </head>
 <body>
  <div class="btn" id="HC"><button onclick="colorHex()">Click!</button></div>
- <script src="script.js"></script>
+
+ <!----------------------- filter-------------------------->
+ <h2 style="margin-left: 600px;">Our Store</h2>
+<div class="myfiltersBtn">
+ <div class="filter">
+   <button class="btn" data-filter="all"  onclick="filterSelection(event)"> all</button>
+   <button class="btn" data-filter="sweet" onclick="filterSelection(event)">Sweets</button>
+   <button class="btn" data-filter="doughnut" onclick="filterSelection(event)">Doughnuts</button>
+   <button class="btn" data-filter="cupcake" onclick="filterSelection(event)"> Cupcakes</button>
+   <button class="btn" data-filter="cake" onclick="filterSelection(event)"> Cakes</button>
+ </div>
+
+    <div class="search-container">
+        <input type="text" id= "search" placeholder="Search.." name="search">
+        <button onclick="filterSearch()"><i class="fa fa-search"></i></button>
+  
+    </div>
+</div>
+<div class="images">
+<div class="allSweet">
+      <div class="card sweet all" >
+          <div class="image"><img src="./assest/image/sweets.jpg" alt=""></div>
+          <div class="text-card"><h2>sweet item</h2> <p>$50</p></div>
+      </div>
+      <div class="card doughnut all " >
+        <div class="image"><img src="./assest/image/doughnut1.jpg" alt=""></div>
+        <div class="text-card"><h2>dounat item</h2> <p>$50</p></div>
+    </div>
+      <div class="card sweet all" >
+        <div class="image"><img src="./assest/image/sweets1.jpg" alt=""></div>
+        <div class="text-card"><h2>sweet item</h2> <p>$50</p></div>
+    </div>
+      <div class="card cake all">
+          <div class="image"><img src="./assest/image/cake.jpg" alt=""></div>
+          <div class="text-card"><h2>cake item</h2><p>$50</p></div>
+      </div>
+      <div class="card cupcake all">
+          <div class="image"><img src="./assest/image/cupcake.jpg" alt=""></div>
+          <div class="text-card"><h2>cupcake item</h2> <p>$50</p></div>
+      </div>
+      <div class="card sweet all" >
+        <div class="image"><img src="./assest/image/sweets2.jpg" alt=""></div>
+        <div class="text-card"><h2>sweet item</h2> <p>$50</p></div>
+    </div>
+      <div class="card doughnut all " >
+          <div class="image"><img src="./assest/image/dounghnut.jpg" alt=""></div>
+          <div class="text-card"><h2>dounat item</h2> <p>$50</p></div>
+      </div>
+      <div class="card cake all">
+        <div class="image"><img src="./assest/image/cake2.jpg" alt=""></div>
+        <div class="text-card"><h2>cake item</h2><p>$50</p></div>
+    </div>
+      <div class="card cupcake all">
+          <div class="image"><img src="./assest/image/cupcake 1.jpg" alt=""></div>
+          <div class="text-card"><h2 >cupcake item</h2> <p>$50</p></div>
+      </div>
+      <div class="card cake all">
+        <div class="image"><img src="./assest/image/cake1.jpg" alt=""></div>
+        <div class="text-card"><h2>cake item</h2><p>$50</p></div>
+    </div>
+  </div>
+</div> 
+
+
+    <script src="script.js"></script>
 </body>
 </html>
